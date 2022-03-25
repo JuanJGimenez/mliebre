@@ -1,0 +1,333 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #00a650;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  right: -70px;
+  top: -15px;
+  text-align: right;
+  color: #39b54a;
+}
+
+section {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.liebre {
+  color: yellow;
+}
+
+.main-header {
+  background-color: #eac926;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+
+.input-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px gray;
+  width: 45%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input {
+  margin: 0 5px 0 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #e7e7e7;
+}
+
+.logo {
+  padding: 5px 0 10px;
+  width: 45%;
+}
+
+.slogan-header {
+  text-align: center;
+  margin-top: 15px;
+  color: #222222;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  background-color: #e8e8e8;
+}
+
+.navBar-main {
+  display: none;
+}
+
+.navBar-main ul {
+  list-style: none;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar-main a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+.precio-desc {
+  display: flex;
+  align-items: center;
+}
+
+.precio {
+  flex-grow: 0.3;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.descuento {
+  flex-grow: 0.7;
+}
+
+.art-main {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 5px;
+  width: 95%;
+  border-radius: 6px;
+}
+
+.texto-header {
+  text-align: center;
+}
+
+h2 {
+  font-size: calc(1em + 1vw);
+  /* font-size: 24px; */
+  text-align: center;
+  padding-top: 15px;
+  color: #222222;
+}
+
+.precio,
+.descuento,
+.des {
+  text-align: left;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+  color: #00a650;
+  font-weight: 600;
+}
+
+.des {
+  font-size: 21px;
+  text-align: left;
+  padding-top: 12px;
+}
+
+.burger-menu {
+  background-color: #0044aa;
+  color: white;
+  display: flex;
+  max-width: 50px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: auto;
+  box-shadow: 2px 2px 0 #8e8bbb;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  text-align: center;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+
+.iconofoo {
+  color: #1259c3;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+.ocultar {
+  visibility: hidden;
+}
+
+.formulario {
+  display: flex;
+}
+
+.fa-truck {
+  transition: 1500ms;
+}
+
+.fa-truck:hover {
+  transform: rotateZ(-90deg);
+}
+
+@media (min-width: 361px) {
+  .art-main:hover .ocultar {
+    visibility: visible;
+  }
+
+  .logo {
+    width: 36%;
+  }
+
+  article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    justify-content: center;
+  }
+
+  .logo {
+    width: 24%;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .top-header {
+    flex-wrap: initial;
+  }
+
+  .navBar-main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .navBar-main ul {
+    display: flex;
+  }
+
+  .navBar-main li {
+    margin: 0px 5px;
+  }
+
+  .art-main {
+    width: 45%;
+  }
+
+  .input-search {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-header {
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .navBar-main {
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
+  .navBar-main li {
+    margin: 0px 10px;
+  }
+
+  .navBar-main a {
+    font-size: 19px;
+  }
+
+  .slogan-header {
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .art-main {
+    width: 24%;
+  }
+
+  body {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .foot {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .foot > section {
+    width: 30%;
+  }
+}

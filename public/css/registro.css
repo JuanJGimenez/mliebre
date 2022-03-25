@@ -1,0 +1,49 @@
+.formulario {
+  display: grid;
+  justify-content: center;
+  padding: 5%;
+  border-radius: 6px;
+}
+
+.campo-form {
+  display: flex;
+  margin: 5px;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  align-items: end;
+}
+
+.botones-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boton {
+  margin: 5px;
+  background: white;
+  box-shadow: 2px 2px 6px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #0044aa;
+  color: white;
+  width: 40%;
+}
+
+.boton-reset {
+  margin: 5px;
+  background: white;
+  box-shadow: 2px 2px 6px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #d33f3f;
+  color: white;
+  width: 40%;
+}
+
+input {
+  align-items: flex-end;
+}
