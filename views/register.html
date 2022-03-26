@@ -23,7 +23,7 @@
             <div class="input-search">
                 <form action="">
                     <div><i class="fas fa-search"></i></div>
-                    <input type="text" placeholder="Buscar productos, marcas" aria-label="search" />
+                    <input type="text" placeholder="| Buscar productos, marcas" aria-label="search" />
                     <button type="reset"><i class="fas fa-times"></i></button>
                 </form>
             </div>
@@ -50,36 +50,70 @@
 
     <main>
         <form class="formulario" action="/" method="">
+            <fieldset>
+                <legend>Completa tus datos!</legend>
+                <div class="campo-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </div>
 
-            <div class="campo-form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-            </div>
+                <div class="campo-form">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                </div>
 
-            <div class="campo-form">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-            </div>
+                <div class="campo-form">
+                    <label for="nombre-usuario">Nombre de usuario:</label>
+                    <input type="tex" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario"
+                        required>
+                </div>
 
-            <div class="campo-form">
-                <label for="nombre-usuario">Nombre de usuario:</label>
-                <input type="tex" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" required>
-            </div>
+                <div class="campo-form">
+                    <label for="fecha-nac">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha-nac" value="2022-03-16" min="1920-01-01" max="2004-03-16" required>
+                </div>
 
-            <div class="campo-form">
-                <label for="fecha-nac">Fecha de nacimiento:</label>
-                <input type="date" name="fecha-nac" value="2022-03-16" min="1920-01-01" max="2004-03-16" required>
-            </div>
+                <div class="campo-form">
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" name="domicilio" id="domicilio" placeholder="Calle y número" required>
+                </div>
 
-            <div class="campo-form">
-                <label for="domicilio">Domicilio:</label>
-                <input type="text" name="domicilio" id="domicilio" placeholder="Calle y número" required>
-            </div>
+                <div class="campo-opciones">
+                    <p>Perfil de usuario:</p><br>
 
-            <div class="botones-form">
-                <button class="boton" type="submit">Enviar</button>
-                <button class="boton-reset" type="reset">Borrar</button>
-            </div>
+                    <input type="radio" name="perfil" value="vendedor">Vendedor<br>
+                    <input type="radio" name="perfil" value="comprador">Comprador
+                </div>
+
+                <div class="campo-opciones">
+                    <p>Intereses:</p><br>
+                    <input type="checkbox" name="electro" id="interes" value="1">Electro<br>
+                    <input type="checkbox" name="moda" id="interes" value="2">Moda<br>
+                    <input type="checkbox" name="hogar" id="interes" value="3">Hogar <br>
+                    <input type="checkbox" name="jugueteria" id="interes" value="4">Juguetería<br>
+                    <input type="checkbox" name="vidasana" id="interes" value="5">Vida sana<br>
+                </div>
+
+
+
+                <div class="campo-form">
+                    <label for="imageFile">Selecciona una imágen de perfil:</label>
+                    <input type="file" id="imageFile" accept="image/*">
+                </div>
+
+                <div class="campo-form">
+                    <label for="password">Contraseña:</label><input type="password" value="" id="myInput">
+                    <label for="password">Confirmar contraseña:</label><input type="password" value="" id="myInput">
+                </div>
+
+
+
+
+                <div class="botones-form">
+                    <button class="boton" type="submit">Enviar</button>
+                    <button class="boton-reset" type="reset">Borrar</button>
+                </div>
+            </fieldset>
         </form>
 
     </main>

@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+header {
+  position: sticky;
+top: 0px;
+z-index: 1;
+}
+
 main section article i {
   display: block;
   font-size: 16px;
@@ -34,9 +40,6 @@ section {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0px;
-  z-index: 3;
 }
 
 .top-header {
@@ -55,7 +58,7 @@ section {
   background-color: white;
   padding: 5px;
   border-radius: 5px;
-  box-shadow: 2px 2px 6px gray;
+  box-shadow: -3px -3px 6px gray;
   width: 45%;
   margin-left: 10px;
   margin-right: 10px;
@@ -233,6 +236,20 @@ footer {
   transform: rotateZ(-90deg);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0044aa;
+  border-radius: 50px;
+}
+
 @media (min-width: 361px) {
   .art-main:hover .ocultar {
     visibility: visible;
@@ -248,10 +265,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .main-header {
-    justify-content: center;
-  }
-
   .logo {
     width: 24%;
   }
@@ -290,7 +303,6 @@ footer {
 
 @media (min-width: 1200px) {
   .top-header {
-    max-width: 1200px;
     margin: auto;
     justify-content: space-around;
   }
@@ -318,7 +330,7 @@ footer {
   }
 
   body {
-    max-width: 80%;
+    max-width: 95%;
     margin: auto;
   }
 
