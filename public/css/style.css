@@ -103,6 +103,8 @@ img {
 
 main {
   background-color: #e8e8e8;
+  width: 90%;
+  margin: auto;
 }
 
 .navBar-main {
@@ -305,6 +307,7 @@ footer {
   .top-header {
     margin: auto;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   .navBar-main {
@@ -325,12 +328,19 @@ footer {
     font-weight: 600;
   }
 
+  img {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
   .art-main {
     width: 24%;
   }
 
   body {
-    max-width: 95%;
     margin: auto;
   }
 
